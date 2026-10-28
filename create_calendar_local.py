@@ -38,14 +38,14 @@ def get_sun_events(current_date):
 
     # Create an event for today's sunrise
     e = Event()
-    e.name = "🌅 Sunrise"
+    e.name = "Sunrise"
     e.begin = datetime_objects['sunrise'].strftime(calendar_time_format)
     e.duration = {'seconds': 15*60}
     events.append(e)
 
     # Create an event for today's sunset
     e = Event()
-    e.name = "🌇 Sunset"
+    e.name = "Sunset"
     e.begin = datetime_objects['sunset'].strftime(calendar_time_format)
     e.duration = {'seconds': 15*60}
     events.append(e)
